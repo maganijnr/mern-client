@@ -88,7 +88,7 @@ const CartScreen = () => {
 								Total price: ${numberWithCommas(subTotal)}
 							</h3>
 							<Button bg="default.600" color="#fff" _hover={{ bg:"default.500"}} onClick={proceedToShipping}>
-								Proceed to checkout
+								Proceed to shipping
 							</Button>
 						</Box>
 					</div>
