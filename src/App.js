@@ -10,6 +10,7 @@ import OrderScreen from "./pages/OrderScreen";
 import ProductDetailScreen from "./pages/ProductDetailScreen";
 import ProductsScreen from "./pages/ProductsScreen";
 import RegisterScreen from "./pages/RegisterScreen";
+import ShippingScreen from "./pages/ShippingScreen";
 
 axios.defaults.withCredentials = true;
 
@@ -35,12 +36,16 @@ const router = createBrowserRouter([
 		element: <ProductDetailScreen />,
 	},
 	{
-		path: "/cart",
+		path: "/cart/:id?",
 		element: <CartScreen />,
 	},
 	{
 		path: "/orders",
 		element: <OrderScreen />,
+	},
+	{
+		path: "/shipping",
+		element: <ShippingScreen />,
 	},
 ]);
 

@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-input[type="number"] {
-		-moz-appearance: textfield;
-	}
-	input[type="number"]:hover,
-	input[type="number"]:focus {
-		/* -moz-appearance: number-input; */
-      
-	}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+input[type='number']:hover,
+input[type='number']:focus {
+  /* -moz-appearance: number-input; */
+}
+
+.cart_items_wrapper::-webkit-scrollbar {
+  display: none;
+}
