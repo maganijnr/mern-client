@@ -49,6 +49,9 @@ module.exports = {
 					900: "#08110a",
 				},
 			},
+			screens: {
+				xs: "475px",
+			},
 		},
 	},
 	plugins: [],

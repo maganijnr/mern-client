@@ -17,7 +17,7 @@ const Navbar = () => {
 		}
 	};
 	return (
-		<div className="w-full h-[75px] bg-secondary-600 flex items-center fixed top-0 left-0 z-20">
+		<div className="w-full h-[75px] bg-secondary-600 flex items-center fixed top-0 left-0 z-50">
 			<ConatinerWrapper>
 				{/*Mobile*/}
 				<div className="w-full h-full flex items-center justify-between md:hidden relative">
