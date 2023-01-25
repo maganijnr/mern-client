@@ -24,32 +24,19 @@ export const addCartItem = async (id, qty) => {
 
 		toast.error(msg);
 	}
-	// const config = {
-	// 	headers: { "Content-Type": "application/json" },
-	// };
-	// const cartData = {
-	// 	userId,
-	// 	products: product,
-	// 	quantity,
-	// 	totalPrice,
-	// };
-	// try {
-	// 	const response = await axios.post(
-	// 		`${process.env.REACT_APP_BACKEND_URL}/api/cart`,
-	// 		cartData,
-	// 		config
-	// 	);
+}
 
-	// 	console.log(response.data);
-	// 	return response.data;
-	// } catch (error) {
-		// const msg =
-		// 	(error.response &&
-		// 		error.response.data &&
-		// 		error.response.data.message) ||
-		// 	error.message ||
-		// 	error.toString();
+// export const saveShippingInfo = async (data) => {
+// 	try {
+		
+// 	} catch (error) {
+// 		const msg =
+// 			(error.response &&
+// 				error.response.data &&
+// 				error.response.data.message) ||
+// 			error.message ||
+// 			error.toString();
 
-		// toast.error(msg);
-	// }
-};
+// 		toast.error(msg);
+// 	}
+// }

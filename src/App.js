@@ -4,6 +4,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import CartScreen from "./pages/CartScreen";
+import CheckoutScreen from "./pages/CheckoutScreen";
 import HomeScreen from "./pages/HomeScreen";
 import LoginScreen from "./pages/LoginScreen";
 import OrderScreen from "./pages/OrderScreen";
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
 	{
 		path: "/shipping",
 		element: <ShippingScreen />,
+	},
+	{
+		path: "/checkout",
+		element: <CheckoutScreen />,
 	},
 ]);
 
