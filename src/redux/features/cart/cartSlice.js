@@ -15,6 +15,7 @@ const initialState = {
 
   order: null,
   orders: [],
+  success: false,
 }
 
 const cartSlice = createSlice({
@@ -62,6 +63,11 @@ const cartSlice = createSlice({
     GET_ALL_USER_ORDERS(state, action) {
       state.loading = true
       state.orders = action.payload
+      state.loading = false
+    },
+    ORDER_PAY(state, action) {
+      state.loading = true
+      state.success = true
       state.loading = false
     },
   },

@@ -80,6 +80,28 @@ export const getUserOrders = async () => {
     toast.error(msg)
   }
 }
+
+export const payForOrder = async (orderId, paymentResult) => {
+  const config = {
+    headers: { 'Content-Type': 'application/json' },
+  }
+  try {
+    const response = await axios.put(
+      `${process.env.REACT_APP_BACKEND_URL}/api/orders/${orderId}/pay`,
+      paymentResult,
+      config,
+    )
+
+    return response.data
+  } catch (error) {
+    const msg =
+      (error.response && error.response.data && error.response.data.message) ||
+      error.message ||
+      error.toString()
+
+    toast.error(msg)
+  }
+}
 // export const saveShippingInfo = async (data) => {
 // 	try {
 

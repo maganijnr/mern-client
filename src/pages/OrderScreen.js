@@ -9,7 +9,6 @@ const OrderScreen = () => {
   const dispatch = useDispatch()
   async function getAllOrders() {
     const data = await getUserOrders()
-    console.log(data)
     dispatch(GET_ALL_USER_ORDERS(data))
   }
   useEffect(() => {
