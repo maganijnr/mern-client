@@ -37,7 +37,6 @@ const HomeScreen = () => {
 		<WebLayout>
 			<HeroSection />
 			<ProductsSection loading={loading} products={products} />
-			<Box bg="default.500">This is the footer</Box>
 		</WebLayout>
 	);
 };
